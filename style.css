@@ -1,0 +1,481 @@
+@font-face {
+  font-family: grotesk-bold;
+  src: url(./MonumentGrotesk-Bold.ttf);
+}
+@font-face {
+  font-family: grotesk-regular;
+  src: url(./MonumentGrotesk-Regular.ttf);
+}
+@font-face {
+  font-family: Tobias-Regular;
+  src: url(./Tobias-Regular.ttf);
+}
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  /* outline: 1px solid limegreen !important; */
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+*::selection {
+  background-color: #e2ff00;
+  color: #000;
+}
+#main {
+  width: 100%;
+}
+#page1 {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background-color: yellow;
+  display: flex;
+}
+#page1 #nav {
+  position: absolute;
+  width: 100%;
+  height: 6vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: grotesk-bold;
+  padding: 0 15px;
+  z-index: 2;
+}
+#nav-first {
+  display: flex;
+  gap: 20px;
+}
+#nav-first a {
+  text-decoration: none;
+  color: #000;
+  padding: 0px 2px;
+}
+#nav-last {
+  display: flex;
+  gap: 20px;
+}
+#nav-last a {
+  text-decoration: none;
+  color: #000;
+  padding: 0px 2px;
+}
+#nav-middle svg {
+  color: yellow;
+  position: absolute;
+  top: 25px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 11%;
+}
+#nav a:hover {
+  background-color: #e2ff00;
+}
+#page1 #part1 {
+  height: 100%;
+  width: 50%;
+  position: relative;
+  background-color: #007248;
+  cursor: pointer;
+}
+#page1 #part1 #box {
+  height: 65%;
+  width: 55%;
+  background-color: #fff;
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  overflow: hidden;
+  transition: all ease 0.3s;
+}
+#part1 #box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+#page1 #part1:hover #box {
+  scale: 1.05;
+}
+#page1 #part2 {
+  height: 100%;
+  width: 50%;
+  position: relative;
+  background-color: #4aae6f;
+}
+#page1 #part2 #p2-first {
+  width: 600px;
+  height: 300px;
+  position: absolute;
+  left: 47%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+#p2-first #para {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 6px;
+  margin-bottom: 15px;
+  padding: 10px 0px;
+}
+#p2-first span {
+  display: flex;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  background-color: #000;
+}
+#p2-first h6 {
+  font-size: 12px;
+  font-family: grotesk-bold;
+  font-weight: 100;
+}
+#p2-first p {
+  font-family: grotesk-regular;
+  font-size: 55px;
+  font-weight: 100;
+  line-height: 53px;
+}
+#part2 h2 {
+  position: absolute;
+  bottom: 10%;
+  left: 8%;
+  font-family: Tobias-Regular;
+  font-size: 30px;
+  font-weight: 100;
+}
+#mid-nav {
+  width: 100%;
+  height: 20vh;
+  font-family: grotesk-regular;
+  display: flex;
+  align-items: last baseline;
+  justify-content: center;
+  gap: 40px;
+  background-color: #efe3d6;
+}
+#mid-nav h2 {
+  font-size: 22px;
+  font-size: 100;
+  margin-bottom: 20px;
+}
+#mid-nav h2:nth-child(1) {
+  background-color: #000;
+  color: #efe3d6;
+  padding: 10px 15px;
+  border-radius: 40px;
+}
+.container1 {
+  width: 100%;
+  height: 90vh;
+  background-color: #efe3d6;
+  display: flex;
+  justify-content: space-evenly;
+  font-family: grotesk-regular;
+}
+.box {
+  width: 32%;
+  height: 100%;
+}
+.box1 {
+  width: 100%;
+  height: 78%;
+  background-color: red;
+  overflow: hidden;
+}
+.box1 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all ease 0.5s;
+}
+.btm-txt {
+  width: 100%;
+  height: 18%;
+  background-color:#efe3d6 ;
+  padding: 5px 5px;
+}
+.btm-txt .txt1 {
+  width: 100%;
+  height: 55%;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+.txt1 h4 {
+  font-size: 28px;
+  font-weight: 100;
+  line-height: 27px;
+  letter-spacing: 2px;
+}
+.txt1 h6 {
+  font-size: 11px;
+  font-family: grotesk-bold;
+  font-weight: 100;
+  color: red;
+}
+.txt1 h6::before{
+    content: '';   
+    position: absolute;
+    right: 11%;
+    top: 3px;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: red;
+}
+.btm-txt p{
+    font-family: Tobias-Regular;
+    font-size: 17px;
+    color: #5e5e5e;
+    padding: 10px 20px;
+}
+.box1 img:hover{
+    scale: 1.05;
+}
+#events{
+    width: 100%;
+    height: 65vh;
+    font-family: grotesk-regular;
+    background-color: #DCC1A2;
+}
+#event-top{
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15px;
+}
+#event-top h2{
+    width: 60%;
+    font-size: 60px;
+    font-weight: 100;
+}
+#event-top #ev-topright{
+    display: flex;
+    margin-top: 55px;
+    gap: 10px;
+    font-family: grotesk-bold;
+}
+#ev-topright h5{
+    font-size: 12px;
+    font-weight: 100;
+}
+#event-bottom{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    justify-content: flex-start;
+    gap: 25px;
+    padding: 13px 15px;
+}
+#event-bottom #image{
+    width: 350px;
+    height: 350px;
+    overflow: hidden;
+}
+#event-bottom #image img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: all ease 0.5s;
+}
+#event-bottom #image:hover img{
+    scale: 1.05;
+}
+#event-bottom #txt{
+    width: 390px;
+    height: 300px;
+    padding: 5px 0;
+}
+#event-bottom #txt h3{
+    width: 100%;
+    height: 20%;
+    font-size: 28px;
+    font-weight: 100;
+    line-height: 27px;
+}
+#event-bottom #txt p{
+    width: 100%;
+    height: 40%;
+    font-family: Tobias-Regular;
+    font-size: 19px;
+    font-weight: 100;
+    color: #00000099;
+    padding: 10px 20px;
+}
+#event-bottom #txt #btm-txt{
+    width: 100%;
+    height: 40%;
+    display: flex;
+    justify-content: flex-start;
+    gap: 30px;
+    padding: 15px 20px;
+}
+#event-bottom #txt #btm-txt h6{
+    font-size: 10px;
+    line-height: 9.5px;
+}
+#event-bottom #txt #btm-txt h5{
+    font-size: 10px;
+    line-height: 9.5px;
+}
+#page2{
+    width: 100%;
+    height: 120vh;
+    position: relative;
+    background-color:#efe3d6;
+    padding: 50px 0px;
+}
+#page2 .container1 .btm-txt .txt1:nth-child(1){
+    margin-bottom: 20px;
+}
+#page2 #container-nav{
+    width: 100%;
+    height: 22.2%;
+    position: relative;
+}
+#container-nav #slide{
+    width: 100%;
+    height: 60%;
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    display: flex;
+    align-items: last baseline;
+    justify-content: center;
+    gap: 50px;
+    font-family: grotesk-bold;
+}
+#container-nav #slide h4{
+    font-size: 16px;
+    font-weight: 100;
+    color: #0000007a;
+}
+#container-nav #slide span{
+    padding: 5px 15px ;
+    background-color: #000;
+    border-radius: 50%;
+    color: #fff;
+    font-weight: 100;
+}
+#page3{
+    width: 100%;
+    height: 95vh;
+    position: relative;
+    cursor: pointer;
+    background-color: #DCC1A2;
+}
+#page3 #image{
+    width: 320px;
+    height: 400px;
+    background-color: red;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+#page3 #image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all ease 0.3s;
+}
+#page3:hover img{
+    scale: 1.05;
+}
+#page3 #mid-txt{
+    width: 100%;
+    height: 320px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    padding: 0 22px;
+
+}
+#page3 #mid-txt h1{
+    font-size: 146px;
+    color: #E2FF00;
+    font-weight: 100;
+    line-height: 146px;
+    font-family: grotesk-regular;
+    letter-spacing: 2px;
+    text-align: justify;
+}
+#page3 #btm-part{
+    width: 100%;
+    height: 7vh;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15px;
+}
+#page3 #btm-part #btm-right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+#page3 #btm-part #btm-right h6{
+    font-family: grotesk-regular;
+    font-size: 16px;
+    font-weight: 900;
+    color: #E2FF00;
+}
+#btm-part #btm-right i{
+    color: #E2FF00;
+    font-weight: 900;
+}
+#footer{
+    width: 100%;
+    height: 28vh;
+    position: relative;
+    background-color: #E2FF00;
+    font-family: grotesk-bold;
+    display: flex;
+    justify-content: flex-start;
+    gap: 15%;
+}
+#footer .foot1{
+    width: 170px;
+    height: 170px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 10px 15px;
+}
+.foot1 h5{
+    font-size: 13px;
+    font-weight: 100;
+    /* display: flex; */
+    align-items: center;
+    cursor: pointer;
+}
+#footer svg{
+    width: 14%;
+    margin-bottom: 60px;
+    mix-blend-mode:difference;
+}
+#foot-btm{
+    width: 70%;
+    height: 40px;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 15px;
+    padding: 20px 15px;
+}
+#foot-btm h6{
+    font-weight: 100;
+    cursor: pointer;
+}
